@@ -24,6 +24,7 @@ main, .successMesage{
     width: auto;
 }
 .signUp{
+    background-color: #fff;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -155,7 +156,7 @@ button:focus{
     display: none;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; filter: invert(); -webkit-filter: invert(); }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media only screen and (max-width: 768px) {
