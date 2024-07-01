@@ -1,14 +1,50 @@
 body{
-    min-height: 1vh;
+    min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(235, 18%, 26%);
     font-family: "Roboto";
     color: hsl(235, 18%, 26%);
 }
-.signUp> img{
+main{
     width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-.signUp section, .successMesage{
+.signUp{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.signUp> .illustration{
+    display: block;
+    flex: 1 1 600px;
+    margin: 1rem;
+    border-radius: 10px;
+    background: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.signUp section{
+    flex: 1 1 600px;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+.successMesage{
     padding: 1rem;
 }
 h1{
@@ -115,8 +151,31 @@ button:focus{
     display: none;
 }
 
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 768px) {
+    main{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+    .signUp{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .signUp .illustration{
+        flex: 1 1 300px;
+        margin: 0;
+        background: url("../assets/images/illustration-sign-up-mobile.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .signUp section{
+        flex: 0;
+        padding: 1rem;
+    }
+}
