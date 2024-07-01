@@ -10,11 +10,12 @@ body{
     font-family: "Roboto";
     color: hsl(235, 18%, 26%);
 }
-main, .successMesage{
+main, .signUp, .successMesage{
     width: 100%;
     max-width: 800px;
     background-color: white;
     border-radius: 20px;
+    
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
